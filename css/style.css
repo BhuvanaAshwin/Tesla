@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,500italic,400italic,300,300italic,700italic,900,900italic);
+body {
+	padding-top: 70px;
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	outline:none;
+}
+/* Header */
+.navbar-fixed-top .nav {
+	padding: 15px 0;
+}
+.navbar-fixed-top .navbar-brand {
+	float:none;
+	margin:5px 0 0 0;
+	display:block;
+	font-size:24px;
+	color:#fff;
+	letter-spacing:2px;
+	font-weight:600;
+}
+.navbar-header {
+	float:none;
+}
+#background {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(polina.jpg) no-repeat;
+	background-size: cover;
+}
+.container h1 {
+	color: white;
+}
+/* Subscribe Panel */
+.subscribe-panel {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	padding:25px 0;
+}
+.subscribe-panel h3 {
+	color:#fff;
+	font-size:20px;
+	text-align:center;
+	font-weight:300;
+	margin:0 0 20px 0;
+	line-height:28px;
+}
+.subscribe-panel h3 span {
+	color:#FCD670;
+}
+.subscribe-form {
+}
+.subscribe-form input.ng-invalid.ng-touched {
+	border:solid 1px #F63440;
+}
+.subscribe-form input.ng-valid.ng-touched {
+	border: solid 1px #45CA58;
+}
+.subscribe-form input[type="text"], .subscribe-form input[type="email"], .subscribe-form select {
+	width:100%;
+	background:#fff;
+	border:solid 2px rgba(255,255,255,0.05);
+	padding:5px 10px;
+	color:#000;
+	font-weight:400;
+	outline:none;
+}
+.subscribe-form select {
+	color:#000;
+}
+.btn-primary {
+	border-radius:2px;
+	background:#D62323;
+	border:none;
+}
+.btn-primary:hover {
+	background:	#ED485C;
+}
+/* Responsive Styles */
+
+@media(min-width:768px) {
+body {
+	padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+.navbar-fixed-top .navbar-brand {
+	padding: 15px 0;
+}
+}
+@media(max-width:991px) {
+.subscribe-form input, .subscribe-form select {
+	margin:0 0 15px 0;
+}
+.subscribe-form .btn {
+	display:block;
+	width:100%;
+}
+}
